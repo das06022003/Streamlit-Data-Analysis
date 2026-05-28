@@ -9,7 +9,7 @@ def read_excel(file):
     df = pd.read_excel(file)
     return df
 
-df = read_excel("data/sales.xls")
+df = read_excel("sales.xls")
 df.columns = df.columns.str.strip()
 
 st.title("Sales Trend Analysis")
