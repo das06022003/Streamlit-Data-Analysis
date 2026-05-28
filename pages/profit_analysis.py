@@ -12,7 +12,7 @@ st.set_page_config(
 # -----------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_excel("data/sales.xls")
+    df = pd.read_excel("sales.xls")
 
     df.columns = df.columns.str.strip()
 
